@@ -1,0 +1,17 @@
+{
+  "name": "tap-room",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Brigette Eckert <Brigette.Eckert@live.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
