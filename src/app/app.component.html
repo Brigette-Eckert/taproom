@@ -4,3 +4,12 @@
 
 
 <h2> {{title}}</h2>
+
+<div *ngFor="let brew of kegs">
+  <h3> {{brew.name}} </h3>
+  <b><i> {{brew.brand}} </i></b> <br/>
+  {{brew.description}} <br/>
+  ${{brew.price}} <br/>
+  {{brew.alcoholContent}}%
+
+</div>

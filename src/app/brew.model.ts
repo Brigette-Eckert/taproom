@@ -6,5 +6,6 @@ export class Brew {
     public price: number,
     public alcoholContent: number,
     public pintsRemaining: number,
+    public imgLocation: string,
   ){}
 }
