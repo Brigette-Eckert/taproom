@@ -8,6 +8,7 @@ An inventory tracking app for a  fake pub built with Angular 2 as part of self s
 
 
  * Practiced using Angular 2 and Angular Cli
+ 
   
 
 ## User Stories
