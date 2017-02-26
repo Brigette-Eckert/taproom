@@ -2,14 +2,64 @@
   Best Brews Bunker
 </h1>
 
+<!--add nav bar for employee vs patron view-->
 
+
+
+<h1>Patron View </h1>
 <h2> {{title}}</h2>
+<!--add sort by  (price greater than or less than x)-->
+<div class="row">
+    <div *ngFor="let brew of kegs" class=" col s12 m5 card">
+      <div class="card-image">
+        <img src = {{brew.imgLocation}} class="responsive-img" >
+      </div>
+      <div class="card-content">
+        <b><i> {{brew.brand}} </i> </b> <br/>
+        <br/>
+        <p> {{brew.description}} </p>  <br/>
+        Price: ${{brew.price}} ABV: {{brew.alcoholContent}}% <br/>
+      </div>
+    </div>
+</div>
 
-<div *ngFor="let brew of kegs">
-  <h3> {{brew.name}} </h3>
-  <b><i> {{brew.brand}} </i></b> <br/>
-  {{brew.description}} <br/>
-  ${{brew.price}} <br/>
-  {{brew.alcoholContent}}%
+
+
+
+<h1> Employee View </h1>
+<!--add sort by:  low (less than 10 pints left)-->
+<div class="row">
+  <div *ngFor="let brew of kegs" class=" col s12 m5 card">
+    <div class="card-image">
+      <img src = {{brew.imgLocation}} class="responsive-img" >
+    </div>
+    <div class="card-content">
+      <b><i> {{brew.brand}} </i> </b> <br/>
+      <br/>
+      <p> {{brew.description}} </p>  <br/>
+      Price: ${{brew.price}} ABV: {{brew.alcoholContent}}% <br/>
+      Pints Left: {{brew.pintsRemaining}}/124 <br/>
+    </div>
+    <div class="card-action">
+      <a class="btn"> Remove Pint </a>
+      <a> Replace Keg </a>
+      <a> Edit Keg</a>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-action">
+    <a class="btn"> Add New Keg </a>
+  </div>
 
 </div>
+
+
+
+
+
+
+
+
+
