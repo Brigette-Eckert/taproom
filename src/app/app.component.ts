@@ -7,7 +7,6 @@ import { Brew } from './brew.model'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'What\'s on Tap:';
     kegs: Brew[] = [
     new Brew('Hazelnut Brown Nectar', 'Rogue Ales', 'A nutty twist to a traditional European Brown Ale. Dark brown in color with a hazelnut aroma, a rich nutty flavor and a smooth malty finish.', 7, 5.6 , 8, '../assets/img/hazelnut.jpg'),
       new Brew('Obsidian Stout', 'Deschutes Brewery', 'Notes of espresso and dark chocolate with a roasty finish.', 7, 6.4, 100, '../assets/img/stout.jpg'),
