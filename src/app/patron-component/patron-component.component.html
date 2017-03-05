@@ -1,0 +1,18 @@
+<!--add sort by  (price greater than or less than x)-->
+<div class="row blue-grey darken-2">
+<div *ngFor="let brew of kegs" class="col s12 m3 offset-m2 card brew-card-client">
+<div class="card-image">
+<img src = {{brew.imgLocation}} class="responsive-img brew-logo" >
+</div>
+<div class="card-content">
+<b><i> {{brew.brand}} </i> </b> <br/>
+<br/>
+<p> <i> {{brew.description}} </i> </p>  <br/>
+<span class="price">Price: ${{brew.price}} </span> <span class="ABV"> ABV: {{brew.alcoholContent}}% </span> <br/>
+</div>
+</div>
+
+
+
+
+
