@@ -25,6 +25,11 @@ export class EmployeeComponentComponent implements OnInit {
     this.selectedBrew.pintsRemaining = 124;
  }
 
+ removePint(clickedBrew){
+   this.selectedBrew = clickedBrew;
+   this.selectedBrew.pintsRemaining = pintsRemaing -1;
+
+ }
   constructor() { }
 
   ngOnInit() {
