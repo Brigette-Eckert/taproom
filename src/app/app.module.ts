@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { EmployeeComponentComponent } from './employee-component/employee-component.component';
 import { PatronComponentComponent } from './patron-component/patron-component.component';
 import {routing} from "./app.routing";
+import {KegDataService} from "./keg-data.service";
 
 @NgModule({
   declarations: [
@@ -21,6 +22,6 @@ import {routing} from "./app.routing";
     routing
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,KegDataService]
 })
 export class AppModule { }
