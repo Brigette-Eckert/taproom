@@ -13,6 +13,18 @@ export class EmployeeComponentComponent implements OnInit {
     new Brew('Ruby Ale', 'McMenamins', 'Light, crisp and refreshingly fruity. Great Western Premium 2-Row and 42 pounds of Oregon-grown and processed raspberry puree is used to craft every colorful batch. Simple but delicious.', 5, 4.39, 45, '../assets/img/ruby2.png'),
     new Brew('Widmer Hefeweizen', 'Widmer Brothers Brewing Company', 'This naturally cloudy flagship brew starts with the highest quality wheat. It\'s bold, clean flavor and pronounced citrus and floral aromas are what define American-style Hefeweizen. So pour yourself a cool, cloudy glass, finish with a lemon and enjoy', 4, 4.9, 25, '../assets/img/hefe.jpg')
   ];
+
+  selectedBrew: Brew = this.kegs[0];
+
+  editKeg(clickedBrew){
+    this.selectedBrew = clickedBrew;
+  }
+
+ replaceKeg(clickedBrew){
+    this.selectedBrew = clickedBrew;
+    this.selectedBrew.pintsRemaining = 124;
+ }
+
   constructor() { }
 
   ngOnInit() {
