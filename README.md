@@ -23,11 +23,9 @@ An inventory tracking app for a  fake pub built with Angular 2 as part of self s
 
 * As an employee, I want to be able to click a button next to a keg whenever I sell a pint of it. This should decrease the number of pints left by 1.
 
-* As an employee, I want to be able to see kegs with less than 10 pints left so I can be ready to change them.
 
-* As a patron, I want to have kegs prices to be color-coded for easy readability.
 
-* As a patron, I want to use the alcohol content property to display stronger beers differently than weaker beers.
+
 
 
 ## Future Features/To Do:

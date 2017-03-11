@@ -22,6 +22,6 @@ import {KegDataService} from "./keg-data.service";
     routing
   ],
   providers: [],
-  bootstrap: [AppComponent,KegDataService]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
